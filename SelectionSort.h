@@ -2,10 +2,14 @@
 #define SELECTION_SORT_H
 
 #include <vector>
+#include <string>
 #include <iostream>
 
-void swap(std::vector<int>& list, int i, int j);
-void printArray(std::vector<int> list);
-void selectionSort(std::vector<int>& list);
+template <typename T>
+void swap(std::vector<T>& list, int i, int j);
+template <typename T>
+void printArray(const std::vector<T> list);
+template <typename T>
+void selectionSort(std::vector<T>& list);
 
 #endif
